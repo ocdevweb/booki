@@ -53,6 +53,7 @@ body {
     justify-content: center;
 }
 
+
 .main-container {
     width: 100%;
     max-width: 1440px;
@@ -92,6 +93,89 @@ a {
 .neutral-star {
     color: var(--main-bg-color)
 }
+/****** Recherche ***********/
+form {
+    
+    width: 450px;
+    display: flex;
+    margin: 15px 0px;
+}
+
+.searchbar form  .input-group{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.searchbar form .input-group .position {
+    border: 0x;
+    margin: 0px;
+    height: 51px;
+}
+
+.searchbar form .input-group input.form-control[type="search"] {
+    margin: 0px;
+    border-radius: 0px;
+    border: 1px solid #f2f2f2;
+    border-right: 0px;
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.searchbar form .input-group button.btn[type="submit"] {
+    margin: 0;
+    border-radius:  0px 15px 15px 0px; 
+    border: 1px;
+    background-color: #0065FC;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.filterbar {
+    flex-wrap: wrap;
+    display: flex;
+    margin: 20px 0px;
+    gap: 1em;
+
+}
+
+.filterbar .filterbuttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.filterbar .filterbuttons button {
+    margin: 2px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    border: 2px solid #f2f2f2;
+    background-color: white;
+    gap: 5px;
+    border-radius:  25px; 
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.filterbar .filterbuttons button:hover {
+    background-color: #DEEBFF;
+}
+
+.infobar{
+    display: block;
+    margin: 15px 0px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {

@@ -2,178 +2,350 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Booki</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booki</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <div class="main-container">
-        <header>
-            <svg viewBox="0 0 162 79" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M55.5216 30C56.5787 30.0189 57.5037 30.2643 58.2966 30.7362C59.0894 31.2081 59.6935 31.8405 60.1088 32.6334C60.543 33.4262 60.7601 34.3229 60.7601 35.3234C60.7601 36.0596 60.6185 36.7581 60.3353 37.4188C60.071 38.0606 59.7029 38.6364 59.231 39.1461C59.9106 39.6557 60.4391 40.2881 60.8167 41.0432C61.2131 41.7983 61.4113 42.6289 61.4113 43.535C61.4113 44.4978 61.1754 45.385 60.7034 46.1967C60.2315 47.0084 59.5991 47.6597 58.8063 48.1505C58.0134 48.6225 57.1356 48.8584 56.1729 48.8584H50V30H55.5216ZM52.4918 32.5484V38.155H55.5216C56.2956 38.155 56.9468 37.8813 57.4754 37.3338C58.004 36.7864 58.2683 36.1162 58.2683 35.3234C58.2683 34.5306 58.004 33.8698 57.4754 33.3413C56.9657 32.8127 56.3145 32.5484 55.5216 32.5484H52.4918ZM52.4918 40.7034V46.31H56.1729C56.9468 46.31 57.5981 46.0457 58.1267 45.5171C58.6552 44.9697 58.9195 44.309 58.9195 43.535C58.9195 42.7422 58.6552 42.072 58.1267 41.5246C57.5981 40.9771 56.9468 40.7034 56.1729 40.7034H52.4918Z"
-                    fill="#0065FC" />
-                <path
-                    d="M70.8452 49C69.8824 49 68.9669 48.8112 68.0985 48.4337C67.2302 48.0561 66.4656 47.537 65.8049 46.8763C65.1442 46.2156 64.6251 45.4511 64.2476 44.5827C63.87 43.7144 63.6812 42.7988 63.6812 41.8361C63.6812 40.8544 63.87 39.92 64.2476 39.0328C64.6251 38.1456 65.1442 37.3716 65.8049 36.7109C66.4656 36.0502 67.2302 35.5405 68.0985 35.1818C68.9669 34.8043 69.8824 34.6155 70.8452 34.6155C71.8268 34.6155 72.7612 34.8043 73.6485 35.1818C74.5357 35.5405 75.3097 36.0502 75.9704 36.7109C76.6311 37.3716 77.1408 38.1456 77.4994 39.0328C77.877 39.92 78.0657 40.8544 78.0657 41.8361C78.0657 42.7988 77.877 43.7144 77.4994 44.5827C77.1408 45.4511 76.6311 46.2156 75.9704 46.8763C75.3097 47.537 74.5357 48.0561 73.6485 48.4337C72.7612 48.8112 71.8268 49 70.8452 49ZM70.8452 37.1356C69.5804 37.1356 68.495 37.5887 67.5888 38.4948C67.1547 38.929 66.8149 39.4386 66.5695 40.0238C66.3241 40.609 66.2014 41.2131 66.2014 41.8361C66.2014 42.459 66.3241 43.0537 66.5695 43.62C66.8149 44.1863 67.1547 44.6865 67.5888 45.1207C68.023 45.5549 68.5138 45.8947 69.0613 46.1401C69.6276 46.3855 70.2222 46.5082 70.8452 46.5082C71.4681 46.5082 72.0722 46.3855 72.6574 46.1401C73.2426 45.8947 73.7428 45.5549 74.1581 45.1207C74.5734 44.6865 74.9038 44.1863 75.1492 43.62C75.3946 43.0537 75.5173 42.459 75.5173 41.8361C75.5173 41.2131 75.3946 40.609 75.1492 40.0238C74.9038 39.4386 74.5734 38.929 74.1581 38.4948C73.7428 38.0606 73.2426 37.7303 72.6574 37.5037C72.0911 37.2583 71.487 37.1356 70.8452 37.1356Z"
-                    fill="#0065FC" />
-                <path
-                    d="M86.9388 49C85.9761 49 85.0605 48.8112 84.1922 48.4337C83.3238 48.0561 82.5593 47.537 81.8986 46.8763C81.2379 46.2156 80.7187 45.4511 80.3412 44.5827C79.9636 43.7144 79.7749 42.7988 79.7749 41.8361C79.7749 40.8544 79.9636 39.92 80.3412 39.0328C80.7187 38.1456 81.2379 37.3716 81.8986 36.7109C82.5593 36.0502 83.3238 35.5405 84.1922 35.1818C85.0605 34.8043 85.9761 34.6155 86.9388 34.6155C87.9204 34.6155 88.8549 34.8043 89.7421 35.1818C90.6293 35.5405 91.4033 36.0502 92.064 36.7109C92.7247 37.3716 93.2344 38.1456 93.5931 39.0328C93.9706 39.92 94.1594 40.8544 94.1594 41.8361C94.1594 42.7988 93.9706 43.7144 93.5931 44.5827C93.2344 45.4511 92.7247 46.2156 92.064 46.8763C91.4033 47.537 90.6293 48.0561 89.7421 48.4337C88.8549 48.8112 87.9204 49 86.9388 49ZM86.9388 37.1356C85.674 37.1356 84.5886 37.5887 83.6825 38.4948C83.2483 38.929 82.9085 39.4386 82.6631 40.0238C82.4177 40.609 82.295 41.2131 82.295 41.8361C82.295 42.459 82.4177 43.0537 82.6631 43.62C82.9085 44.1863 83.2483 44.6865 83.6825 45.1207C84.1167 45.5549 84.6075 45.8947 85.1549 46.1401C85.7212 46.3855 86.3159 46.5082 86.9388 46.5082C87.5618 46.5082 88.1658 46.3855 88.751 46.1401C89.3362 45.8947 89.8365 45.5549 90.2518 45.1207C90.6671 44.6865 90.9974 44.1863 91.2428 43.62C91.4882 43.0537 91.6109 42.459 91.6109 41.8361C91.6109 41.2131 91.4882 40.609 91.2428 40.0238C90.9974 39.4386 90.6671 38.929 90.2518 38.4948C89.8365 38.0606 89.3362 37.7303 88.751 37.5037C88.1847 37.2583 87.5806 37.1356 86.9388 37.1356Z"
-                    fill="#0065FC" />
-                <path
-                    d="M103.501 48.8584L99.1965 43.62V48.8584H96.7047V30.0283H99.1965V38.155L103.047 34.5306H106.757L100.046 40.7601L106.785 48.8584H103.501Z"
-                    fill="#0065FC" />
-                <path
-                    d="M109.787 32.6617C109.428 32.6617 109.117 32.539 108.853 32.2936C108.607 32.0293 108.485 31.7178 108.485 31.3592C108.485 31.0005 108.607 30.6985 108.853 30.4531C109.117 30.1888 109.428 30.0566 109.787 30.0566C110.146 30.0566 110.448 30.1888 110.693 30.4531C110.958 30.6985 111.09 31.0005 111.09 31.3592C111.09 31.7178 110.958 32.0293 110.693 32.2936C110.448 32.539 110.146 32.6617 109.787 32.6617ZM108.626 48.8584V34.7004H111.005V48.8584H108.626Z"
-                    fill="#0065FC" />
-                <path
-                    d="M88.4338 40.0097C88.4338 40.8094 87.7855 41.4577 86.9858 41.4577C86.1861 41.4577 85.5378 40.8094 85.5378 40.0097C85.5378 39.21 86.1861 38.5617 86.9858 38.5617C87.7855 38.5617 88.4338 39.21 88.4338 40.0097Z"
-                    fill="#0065FC" />
-                <path d="M85.5378 44.6754L86.2369 39.527H87.8346L88.4338 44.6754H85.5378Z" fill="#0065FC" />
-            </svg>
+  <div class="main-container">
+    <header>
+      <svg viewBox="0 0 162 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M55.5216 30C56.5787 30.0189 57.5037 30.2643 58.2966 30.7362C59.0894 31.2081 59.6935 31.8405 60.1088 32.6334C60.543 33.4262 60.7601 34.3229 60.7601 35.3234C60.7601 36.0596 60.6185 36.7581 60.3353 37.4188C60.071 38.0606 59.7029 38.6364 59.231 39.1461C59.9106 39.6557 60.4391 40.2881 60.8167 41.0432C61.2131 41.7983 61.4113 42.6289 61.4113 43.535C61.4113 44.4978 61.1754 45.385 60.7034 46.1967C60.2315 47.0084 59.5991 47.6597 58.8063 48.1505C58.0134 48.6225 57.1356 48.8584 56.1729 48.8584H50V30H55.5216ZM52.4918 32.5484V38.155H55.5216C56.2956 38.155 56.9468 37.8813 57.4754 37.3338C58.004 36.7864 58.2683 36.1162 58.2683 35.3234C58.2683 34.5306 58.004 33.8698 57.4754 33.3413C56.9657 32.8127 56.3145 32.5484 55.5216 32.5484H52.4918ZM52.4918 40.7034V46.31H56.1729C56.9468 46.31 57.5981 46.0457 58.1267 45.5171C58.6552 44.9697 58.9195 44.309 58.9195 43.535C58.9195 42.7422 58.6552 42.072 58.1267 41.5246C57.5981 40.9771 56.9468 40.7034 56.1729 40.7034H52.4918Z"
+          fill="#0065FC" />
+        <path
+          d="M70.8452 49C69.8824 49 68.9669 48.8112 68.0985 48.4337C67.2302 48.0561 66.4656 47.537 65.8049 46.8763C65.1442 46.2156 64.6251 45.4511 64.2476 44.5827C63.87 43.7144 63.6812 42.7988 63.6812 41.8361C63.6812 40.8544 63.87 39.92 64.2476 39.0328C64.6251 38.1456 65.1442 37.3716 65.8049 36.7109C66.4656 36.0502 67.2302 35.5405 68.0985 35.1818C68.9669 34.8043 69.8824 34.6155 70.8452 34.6155C71.8268 34.6155 72.7612 34.8043 73.6485 35.1818C74.5357 35.5405 75.3097 36.0502 75.9704 36.7109C76.6311 37.3716 77.1408 38.1456 77.4994 39.0328C77.877 39.92 78.0657 40.8544 78.0657 41.8361C78.0657 42.7988 77.877 43.7144 77.4994 44.5827C77.1408 45.4511 76.6311 46.2156 75.9704 46.8763C75.3097 47.537 74.5357 48.0561 73.6485 48.4337C72.7612 48.8112 71.8268 49 70.8452 49ZM70.8452 37.1356C69.5804 37.1356 68.495 37.5887 67.5888 38.4948C67.1547 38.929 66.8149 39.4386 66.5695 40.0238C66.3241 40.609 66.2014 41.2131 66.2014 41.8361C66.2014 42.459 66.3241 43.0537 66.5695 43.62C66.8149 44.1863 67.1547 44.6865 67.5888 45.1207C68.023 45.5549 68.5138 45.8947 69.0613 46.1401C69.6276 46.3855 70.2222 46.5082 70.8452 46.5082C71.4681 46.5082 72.0722 46.3855 72.6574 46.1401C73.2426 45.8947 73.7428 45.5549 74.1581 45.1207C74.5734 44.6865 74.9038 44.1863 75.1492 43.62C75.3946 43.0537 75.5173 42.459 75.5173 41.8361C75.5173 41.2131 75.3946 40.609 75.1492 40.0238C74.9038 39.4386 74.5734 38.929 74.1581 38.4948C73.7428 38.0606 73.2426 37.7303 72.6574 37.5037C72.0911 37.2583 71.487 37.1356 70.8452 37.1356Z"
+          fill="#0065FC" />
+        <path
+          d="M86.9388 49C85.9761 49 85.0605 48.8112 84.1922 48.4337C83.3238 48.0561 82.5593 47.537 81.8986 46.8763C81.2379 46.2156 80.7187 45.4511 80.3412 44.5827C79.9636 43.7144 79.7749 42.7988 79.7749 41.8361C79.7749 40.8544 79.9636 39.92 80.3412 39.0328C80.7187 38.1456 81.2379 37.3716 81.8986 36.7109C82.5593 36.0502 83.3238 35.5405 84.1922 35.1818C85.0605 34.8043 85.9761 34.6155 86.9388 34.6155C87.9204 34.6155 88.8549 34.8043 89.7421 35.1818C90.6293 35.5405 91.4033 36.0502 92.064 36.7109C92.7247 37.3716 93.2344 38.1456 93.5931 39.0328C93.9706 39.92 94.1594 40.8544 94.1594 41.8361C94.1594 42.7988 93.9706 43.7144 93.5931 44.5827C93.2344 45.4511 92.7247 46.2156 92.064 46.8763C91.4033 47.537 90.6293 48.0561 89.7421 48.4337C88.8549 48.8112 87.9204 49 86.9388 49ZM86.9388 37.1356C85.674 37.1356 84.5886 37.5887 83.6825 38.4948C83.2483 38.929 82.9085 39.4386 82.6631 40.0238C82.4177 40.609 82.295 41.2131 82.295 41.8361C82.295 42.459 82.4177 43.0537 82.6631 43.62C82.9085 44.1863 83.2483 44.6865 83.6825 45.1207C84.1167 45.5549 84.6075 45.8947 85.1549 46.1401C85.7212 46.3855 86.3159 46.5082 86.9388 46.5082C87.5618 46.5082 88.1658 46.3855 88.751 46.1401C89.3362 45.8947 89.8365 45.5549 90.2518 45.1207C90.6671 44.6865 90.9974 44.1863 91.2428 43.62C91.4882 43.0537 91.6109 42.459 91.6109 41.8361C91.6109 41.2131 91.4882 40.609 91.2428 40.0238C90.9974 39.4386 90.6671 38.929 90.2518 38.4948C89.8365 38.0606 89.3362 37.7303 88.751 37.5037C88.1847 37.2583 87.5806 37.1356 86.9388 37.1356Z"
+          fill="#0065FC" />
+        <path
+          d="M103.501 48.8584L99.1965 43.62V48.8584H96.7047V30.0283H99.1965V38.155L103.047 34.5306H106.757L100.046 40.7601L106.785 48.8584H103.501Z"
+          fill="#0065FC" />
+        <path
+          d="M109.787 32.6617C109.428 32.6617 109.117 32.539 108.853 32.2936C108.607 32.0293 108.485 31.7178 108.485 31.3592C108.485 31.0005 108.607 30.6985 108.853 30.4531C109.117 30.1888 109.428 30.0566 109.787 30.0566C110.146 30.0566 110.448 30.1888 110.693 30.4531C110.958 30.6985 111.09 31.0005 111.09 31.3592C111.09 31.7178 110.958 32.0293 110.693 32.2936C110.448 32.539 110.146 32.6617 109.787 32.6617ZM108.626 48.8584V34.7004H111.005V48.8584H108.626Z"
+          fill="#0065FC" />
+        <path
+          d="M88.4338 40.0097C88.4338 40.8094 87.7855 41.4577 86.9858 41.4577C86.1861 41.4577 85.5378 40.8094 85.5378 40.0097C85.5378 39.21 86.1861 38.5617 86.9858 38.5617C87.7855 38.5617 88.4338 39.21 88.4338 40.0097Z"
+          fill="#0065FC" />
+        <path d="M85.5378 44.6754L86.2369 39.527H87.8346L88.4338 44.6754H85.5378Z" fill="#0065FC" />
+      </svg>
 
-            <nav>
-                <ul>
-                    <li><a href=""><span>Hébergements</span></a></li>
-                    <li><a href=""><span>Activités</span></a></li>
-                </ul>
-            </nav>
+      <nav>
+        <ul>
+          <li><a href=""><span>Hébergements</span></a></li>
+          <li><a href=""><span>Activités</span></a></li>
+        </ul>
+      </nav>
 
-        </header>
+    </header>
 
-        <main>
-            <div class="search" >
-            <section class="searchbar">
-            <h3 class="section-title">Trouvez votre hébergement pour des vacances de rêve</h3>
-            <p>En plein centre-ville ou en pleine nature</p>
-            <form action="/search" method="POST" role="search">
-                <div class="input-group">
-                    <div class="position">
-                        <svg width="52" height="51" viewBox="0 0 52 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M51.5 1V0.5H51H16C7.43959 0.5 0.5 7.43959 0.5 16V35C0.5 43.5604 7.43959 50.5 16 50.5H51H51.5V50V1Z" fill="#F2F2F2" stroke="#F2F2F2"/>
-                            <path d="M25.1359 33.5955C23.2328 31.3326 19 25.8481 19 22.7675C19 19.0299 22.134 16 26 16C29.8646 16 33 19.0299 33 22.7675C33 25.8481 28.7344 31.3326 26.8641 33.5955C26.4156 34.1348 25.5844 34.1348 25.1359 33.5955ZM26 25.0234C27.287 25.0234 28.3333 24.0117 28.3333 22.7675C28.3333 21.5233 27.287 20.5117 26 20.5117C24.713 20.5117 23.6667 21.5233 23.6667 22.7675C23.6667 24.0117 24.713 25.0234 26 25.0234Z" fill="black"/>
-                            </svg>
-                    </div>
-                    <input class="form-control" type="search" placeholder="Marseille, France" aria-label="Place" aria-describedby="btn" name="query" required>
-                    <button class="btn" type="submit" id="btn">
-                        Rechercher
-                        <!-- <svg xmlns="http://www.w3.org/2000/sv" ,="" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"></circle><path d="M21 21l-5.2-5.2"></path></svg></button>
-                --> </div>
-            </form>
+    <main>
+      <div class="search">
+        <section class="searchbar">
+          <h3 class="section-title">Trouvez votre hébergement pour des vacances de rêve</h3>
+          <p>En plein centre-ville ou en pleine nature</p>
+          <form action="/search" method="POST" role="search">
+            <div class="input-group">
+              <div class="position">
+                <svg width="52" height="51" viewBox="0 0 52 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M51.5 1V0.5H51H16C7.43959 0.5 0.5 7.43959 0.5 16V35C0.5 43.5604 7.43959 50.5 16 50.5H51H51.5V50V1Z"
+                    fill="#F2F2F2" stroke="#F2F2F2" />
+                  <path
+                    d="M25.1359 33.5955C23.2328 31.3326 19 25.8481 19 22.7675C19 19.0299 22.134 16 26 16C29.8646 16 33 19.0299 33 22.7675C33 25.8481 28.7344 31.3326 26.8641 33.5955C26.4156 34.1348 25.5844 34.1348 25.1359 33.5955ZM26 25.0234C27.287 25.0234 28.3333 24.0117 28.3333 22.7675C28.3333 21.5233 27.287 20.5117 26 20.5117C24.713 20.5117 23.6667 21.5233 23.6667 22.7675C23.6667 24.0117 24.713 25.0234 26 25.0234Z"
+                    fill="black" />
+                </svg>
+              </div>
+              <input class="form-control" type="search" placeholder="Marseille, France" aria-label="Place"
+                aria-describedby="btn" name="query" required>
+              <button class="btn" type="submit" id="btn">
+                Rechercher
+                <!-- <svg xmlns="http://www.w3.org/2000/sv" ,="" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"></circle><path d="M21 21l-5.2-5.2"></path></svg></button>
+                -->
+            </div>
+          </form>
         </section>
         <section class="filterbar">
-            <h5 >Filtres</h5 >
-            <div class="filterbuttons form">
-                <button class="btn"><svg width="22" height="49" viewBox="0 -12 22 49"  fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M21.352 3.68479C20.0187 3.09424 18.6842 2.86957 17.3505 2.86957C13.1166 2.8692 8.88305 5.1323 4.64915 5.1323C3.58732 5.1323 2.52618 4.99001 1.46435 4.63431C1.34507 4.59438 1.22545 4.57551 1.10858 4.57551C0.516992 4.57551 0 5.05898 0 5.7301V17.2456C0 17.704 0.248527 18.1384 0.647615 18.3149C1.981 18.9058 3.31542 19.1304 4.64915 19.1304C8.88305 19.1304 13.117 16.8673 17.3509 16.8673C18.4127 16.8673 19.4738 17.0096 20.5356 17.3653C20.6549 17.4053 20.7745 17.4241 20.8914 17.4241C21.483 17.4241 22 16.9407 22 16.2695V4.75445C21.9997 4.29566 21.7511 3.86155 21.352 3.68479ZM1.64997 6.50721C2.34159 6.69015 3.06345 6.78198 3.80594 6.83134C3.60382 7.8981 2.71558 8.70207 1.64997 8.70207V6.50721ZM1.64997 16.8517V15.1175C2.83142 15.1175 3.78738 16.1073 3.83997 17.3461C3.06551 17.2804 2.34159 17.1171 1.64997 16.8517ZM10.9998 14.4845C9.48082 14.4845 8.24987 12.9241 8.24987 11C8.24987 9.07556 9.48116 7.51553 10.9998 7.51553C12.5185 7.51553 13.7498 9.07556 13.7498 11C13.7498 12.9248 12.5181 14.4845 10.9998 14.4845ZM20.3497 15.4928C19.7474 15.3335 19.1222 15.2442 18.4825 15.1864C18.6842 14.2398 19.4278 13.5212 20.3497 13.3978V15.4928ZM20.3497 6.92281C19.2879 6.78089 18.4639 5.8448 18.4312 4.68875C19.1029 4.76752 19.7406 4.91488 20.3497 5.14827V6.92281Z" fill="#0065FC"/>
-                    </svg> <span>Économique</span></button>
-                <button class="btn"><svg width="22" height="49" viewBox="0 -12 22 49" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12.7396 2.0625C12.7396 3.2016 11.8362 4.125 10.7228 4.125C9.60937 4.125 8.70601 3.2016 8.70601 2.0625C8.70601 0.923398 9.60937 0 10.7228 0C11.8362 0 12.7396 0.923398 12.7396 2.0625ZM10.3867 15.125V20.625C10.3867 21.3855 9.78584 22 9.04214 22C8.29845 22 7.69762 21.3855 7.69762 20.625V11.0387L6.4972 13.084C6.11485 13.7328 5.28881 13.9434 4.65226 13.5523C4.01569 13.1613 3.80979 12.3191 4.1923 11.666L6.6409 7.50234C7.36989 6.26055 8.6808 5.5 10.0968 5.5H11.3488C12.7648 5.5 14.0757 6.26055 14.8068 7.50234L17.2522 11.666C17.6345 12.3191 17.4286 13.1613 16.7942 13.5523C16.1555 13.9434 15.332 13.7328 14.9497 13.084L13.748 11.0387V20.625C13.748 21.3855 13.1472 22 12.4035 22C11.6598 22 11.0589 21.3855 11.0589 20.625V15.125H10.3867Z" fill="#0065FC"/>
-                    </svg>
-                    <span>Familial</span></button>
-                <button class="btn"><svg width="22" height="49" viewBox="0 -12 22 49"  fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 8.22829V7.98543C0 5.05861 2.17078 2.56224 5.13047 2.08155C7.05117 1.76375 9.08359 2.38596 10.4844 3.75306L11 4.25468L11.477 3.75306C12.9164 2.38596 14.9102 1.76375 16.8695 2.08155C19.8301 2.56224 22 5.05861 22 7.98543V8.22829C22 9.96595 21.2609 11.6283 19.9547 12.8132L12.1902 19.8769C11.868 20.17 11.4426 20.3333 11 20.3333C10.5574 20.3333 10.132 20.17 9.80977 19.8769L2.04488 12.8132C0.740352 11.6283 1.28906e-05 9.96595 1.28906e-05 8.22829H0Z" fill="#0065FC"/>
-                    </svg>
-                    <span>Romantique</span></button>
-                <button class="btn"><svg width="22" height="49" viewBox="0 -12 22 49"  fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8.89727 1.21273C9.21067 0.92649 9.69683 0.930411 10.0102 1.21665C11.1191 2.23221 12.1598 3.32619 13.1321 4.51036C13.5741 3.94572 14.0763 3.33011 14.6187 2.82821C14.9361 2.53805 15.4263 2.53805 15.7437 2.83214C17.1339 4.12609 18.3111 5.83568 19.1388 7.45901C19.9544 9.05881 20.4968 10.6939 20.4968 11.8467C20.4968 16.85 16.487 21.0769 11.4968 21.0769C6.4504 21.0769 2.49683 16.8461 2.49683 11.8428C2.49683 10.3371 3.212 8.4981 4.32093 6.67872C5.44192 4.83189 7.02495 2.90664 8.89727 1.21273ZM11.5651 17.3127C12.5816 17.3127 13.4816 17.0382 14.3294 16.4893C16.0209 15.3365 16.475 13.0309 15.4584 11.2193C15.2776 10.8664 14.8156 10.8429 14.5544 11.1409L13.5419 12.2898C13.2767 12.5878 12.7986 12.5799 12.5495 12.2702C11.8866 11.4468 10.7013 9.97635 10.0263 9.14116C9.77316 8.82747 9.29102 8.82355 9.03388 9.13723C7.67584 10.8037 6.99281 11.8545 6.99281 13.0348C6.99683 15.7207 9.02986 17.3127 11.5651 17.3127Z" fill="#0065FC"/>
-                    </svg>
-                    <span>Nos pépites</span></button>
-             </div>
-        </section>      
+          <h5>Filtres</h5>
+          <div class="filterbuttons form">
+            <button class="btn">
+              <svg width="22" height="49" viewBox="0 -12 22 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M21.352 3.68479C20.0187 3.09424 18.6842 2.86957 17.3505 2.86957C13.1166 2.8692 8.88305 5.1323 4.64915 5.1323C3.58732 5.1323 2.52618 4.99001 1.46435 4.63431C1.34507 4.59438 1.22545 4.57551 1.10858 4.57551C0.516992 4.57551 0 5.05898 0 5.7301V17.2456C0 17.704 0.248527 18.1384 0.647615 18.3149C1.981 18.9058 3.31542 19.1304 4.64915 19.1304C8.88305 19.1304 13.117 16.8673 17.3509 16.8673C18.4127 16.8673 19.4738 17.0096 20.5356 17.3653C20.6549 17.4053 20.7745 17.4241 20.8914 17.4241C21.483 17.4241 22 16.9407 22 16.2695V4.75445C21.9997 4.29566 21.7511 3.86155 21.352 3.68479ZM1.64997 6.50721C2.34159 6.69015 3.06345 6.78198 3.80594 6.83134C3.60382 7.8981 2.71558 8.70207 1.64997 8.70207V6.50721ZM1.64997 16.8517V15.1175C2.83142 15.1175 3.78738 16.1073 3.83997 17.3461C3.06551 17.2804 2.34159 17.1171 1.64997 16.8517ZM10.9998 14.4845C9.48082 14.4845 8.24987 12.9241 8.24987 11C8.24987 9.07556 9.48116 7.51553 10.9998 7.51553C12.5185 7.51553 13.7498 9.07556 13.7498 11C13.7498 12.9248 12.5181 14.4845 10.9998 14.4845ZM20.3497 15.4928C19.7474 15.3335 19.1222 15.2442 18.4825 15.1864C18.6842 14.2398 19.4278 13.5212 20.3497 13.3978V15.4928ZM20.3497 6.92281C19.2879 6.78089 18.4639 5.8448 18.4312 4.68875C19.1029 4.76752 19.7406 4.91488 20.3497 5.14827V6.92281Z"
+                  fill="#0065FC" />
+              </svg> <span>Économique</span></button>
+            <button class="btn"><svg width="22" height="49" viewBox="0 -12 22 49" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12.7396 2.0625C12.7396 3.2016 11.8362 4.125 10.7228 4.125C9.60937 4.125 8.70601 3.2016 8.70601 2.0625C8.70601 0.923398 9.60937 0 10.7228 0C11.8362 0 12.7396 0.923398 12.7396 2.0625ZM10.3867 15.125V20.625C10.3867 21.3855 9.78584 22 9.04214 22C8.29845 22 7.69762 21.3855 7.69762 20.625V11.0387L6.4972 13.084C6.11485 13.7328 5.28881 13.9434 4.65226 13.5523C4.01569 13.1613 3.80979 12.3191 4.1923 11.666L6.6409 7.50234C7.36989 6.26055 8.6808 5.5 10.0968 5.5H11.3488C12.7648 5.5 14.0757 6.26055 14.8068 7.50234L17.2522 11.666C17.6345 12.3191 17.4286 13.1613 16.7942 13.5523C16.1555 13.9434 15.332 13.7328 14.9497 13.084L13.748 11.0387V20.625C13.748 21.3855 13.1472 22 12.4035 22C11.6598 22 11.0589 21.3855 11.0589 20.625V15.125H10.3867Z"
+                  fill="#0065FC" />
+              </svg>
+              <span>Familial</span></button>
+            <button class="btn"><svg width="22" height="49" viewBox="0 -12 22 49" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0 8.22829V7.98543C0 5.05861 2.17078 2.56224 5.13047 2.08155C7.05117 1.76375 9.08359 2.38596 10.4844 3.75306L11 4.25468L11.477 3.75306C12.9164 2.38596 14.9102 1.76375 16.8695 2.08155C19.8301 2.56224 22 5.05861 22 7.98543V8.22829C22 9.96595 21.2609 11.6283 19.9547 12.8132L12.1902 19.8769C11.868 20.17 11.4426 20.3333 11 20.3333C10.5574 20.3333 10.132 20.17 9.80977 19.8769L2.04488 12.8132C0.740352 11.6283 1.28906e-05 9.96595 1.28906e-05 8.22829H0Z"
+                  fill="#0065FC" />
+              </svg>
+              <span>Romantique</span></button>
+            <button class="btn"><svg width="22" height="49" viewBox="0 -12 22 49" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M8.89727 1.21273C9.21067 0.92649 9.69683 0.930411 10.0102 1.21665C11.1191 2.23221 12.1598 3.32619 13.1321 4.51036C13.5741 3.94572 14.0763 3.33011 14.6187 2.82821C14.9361 2.53805 15.4263 2.53805 15.7437 2.83214C17.1339 4.12609 18.3111 5.83568 19.1388 7.45901C19.9544 9.05881 20.4968 10.6939 20.4968 11.8467C20.4968 16.85 16.487 21.0769 11.4968 21.0769C6.4504 21.0769 2.49683 16.8461 2.49683 11.8428C2.49683 10.3371 3.212 8.4981 4.32093 6.67872C5.44192 4.83189 7.02495 2.90664 8.89727 1.21273ZM11.5651 17.3127C12.5816 17.3127 13.4816 17.0382 14.3294 16.4893C16.0209 15.3365 16.475 13.0309 15.4584 11.2193C15.2776 10.8664 14.8156 10.8429 14.5544 11.1409L13.5419 12.2898C13.2767 12.5878 12.7986 12.5799 12.5495 12.2702C11.8866 11.4468 10.7013 9.97635 10.0263 9.14116C9.77316 8.82747 9.29102 8.82355 9.03388 9.13723C7.67584 10.8037 6.99281 11.8545 6.99281 13.0348C6.99683 15.7207 9.02986 17.3127 11.5651 17.3127Z"
+                  fill="#0065FC" />
+              </svg>
+              <span>Nos pépites</span></button>
+          </div>
+        </section>
         <div class="infobar">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="12" cy="12" r="11.5" stroke="#D9D9D9"/>
-                <path d="M13.3333 15.6829H12.6667V11.0074C12.6667 10.6381 12.3681 10.3395 12 10.3395H10.6667C10.2985 10.3395 10 10.6381 10 11.0074C10 11.3766 10.2985 11.6565 10.6667 11.6565H11.3333V15.6641H10.6667C10.2985 15.6641 10 15.9628 10 16.3321C10 16.7013 10.2985 17 10.6667 17H13.3333C13.7015 17 14 16.7013 14 16.3321C14 15.9628 13.7021 15.6829 13.3333 15.6829ZM12 9.00359C12.5523 9.00359 13 8.55503 13 8.00169C13 7.44835 12.5521 7 12 7C11.4479 7 11 7.44856 11 8.0019C11 8.55524 11.4477 9.00359 12 9.00359Z" fill="#0065FC"/>
-                </svg>
-                <span>Plus de 500 logements sont disponibles dans cette ville</span>
-                
-        </div>
-    </div>
-        
-            <div class="hebergements-and-populaires">
-                <section class="hebergements">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="11.5" stroke="#D9D9D9" />
+            <path
+              d="M13.3333 15.6829H12.6667V11.0074C12.6667 10.6381 12.3681 10.3395 12 10.3395H10.6667C10.2985 10.3395 10 10.6381 10 11.0074C10 11.3766 10.2985 11.6565 10.6667 11.6565H11.3333V15.6641H10.6667C10.2985 15.6641 10 15.9628 10 16.3321C10 16.7013 10.2985 17 10.6667 17H13.3333C13.7015 17 14 16.7013 14 16.3321C14 15.9628 13.7021 15.6829 13.3333 15.6829ZM12 9.00359C12.5523 9.00359 13 8.55503 13 8.00169C13 7.44835 12.5521 7 12 7C11.4479 7 11 7.44856 11 8.0019C11 8.55524 11.4477 9.00359 12 9.00359Z"
+              fill="#0065FC" />
+          </svg>
+          <span>Plus de 500 logements sont disponibles dans cette ville</span>
 
-                </section>
-                <section class="populaires">
-                    <div class="populaires-title">
-                        <h2 class="section-title">Les plus populaires</h2>
-                        <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
-                    </div>
-                    <div class="populaires-cards">
-                        <a href="#">
-                            <article class="card">
-                                <img src="./images/hebergements/emile-guillemot.jpg"
-                                    alt="Image de la chambre d'hôtel montrant un lit">
-                                <div class="card-content">
-                                    <div class="card-txt">
-                                        <h3 class="card-title">Hôtel Le soleil du matin</h3>
-                                        <p class="card-subtitle">Nuit à partir de 128<span class="euro">€</span></p>
-                                    </div>
-                                    <div class="card-rating">
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                                        <span class="sr-only">Note de 4 sur 5</span>
-                                    </div>
-                                </div>
-                            </article>
-                        </a>
-                        <a href="#">
-                            <article class="card">
-                                <img src="./images/hebergements/aw-creative.jpg"
-                                    alt="Image de la chambre d'hôtel montrant un lit">
-                                <div class="card-content">
-                                    <div class="card-txt">
-                                        <h3 class="card-title">Chambres d’hôtes Au cœur de l’eau</h3>
-                                        <p class="card-subtitle">Nuit à partir de 71<span class="euro">€</span></p>
-                                    </div>
-                                    <div class="card-rating">
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                                        <span class="sr-only">Note de 4 sur 5</span>
-                                    </div>
-                                </div>
-                            </article>
-                        </a>
-                        <a href="#">
-                            <article class="card">
-                                <img src="./images/hebergements/febrian-zakaria2.jpg"
-                                    alt="Image de la chambre d'hôtel montrant un lit">
-                                <div class="card-content">
-                                    <div class="card-txt">
-                                        <h3 class="card-title">Hôtel Bleu et Blanc</h3>
-                                        <p class="card-subtitle">Nuit à partir de 68<span class="euro">€</span></p>
-                                    </div>
-                                    <div class="card-rating">
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                                        <span class="sr-only">Note de 4 sur 5</span>
-                                    </div>
-                                </div>
-                            </article>
-                        </a>
-                    </div>
-                </section>
+        </div>
+      </div>
+      <div class="hebergements-and-populaires">
+        <section class="hebergements">
+            <div class="hebergements-title">
+              <h2 class="section-title">Hébergements à Marseille</h2>
+              <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
             </div>
-        </main>
-        <footer></footer>
-    </div>
+            <div class="hebergements-cards">
+              <a href="#">
+                <article class="card">
+                  <img src="./images/hebergements/aw-creative.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                  <div class="card-content">
+                    <div class="card-txt">
+                      <h3 class="card-title">Chambres d’hôtes Au cœur de l’eau</h3>
+                      <p class="card-subtitle">Nuit à partir de 71<span class="euro">€</span></p>
+                    </div>
+                    <div class="card-rating">
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                      <span class="sr-only">Note de 4 sur 5</span>
+                    </div>
+                  </div>
+                </article>
+              </a>
+              <a href="#">
+                <article class="card">
+                  <img src="./images/hebergements/emile-guillemot.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                  <div class="card-content">
+                    <div class="card-txt">
+                      <h3 class="card-title">Hôtel Le soleil du matin</h3>
+                      <p class="card-subtitle">Nuit à partir de 128<span class="euro">€</span></p>
+                    </div>
+                    <div class="card-rating">
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                      <span class="sr-only">Note de 4 sur 5</span>
+                    </div>
+                  </div>
+                </article>
+              </a>
+              <a href="#">
+                <article class="card">
+                  <img src="./images/hebergements/aw-creative.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                  <div class="card-content">
+                    <div class="card-txt">
+                      <h3 class="card-title">Chambres d’hôtes Au cœur de l’eau</h3>
+                      <p class="card-subtitle">Nuit à partir de 71<span class="euro">€</span></p>
+                    </div>
+                    <div class="card-rating">
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                      <span class="sr-only">Note de 4 sur 5</span>
+                    </div>
+                  </div>
+                </article>
+              </a>
+              <a href="#">
+                <article class="card">
+                  <img src="./images/hebergements/febrian-zakaria2.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                  <div class="card-content">
+                    <div class="card-txt">
+                      <h3 class="card-title">Hôtel Bleu et Blanc</h3>
+                      <p class="card-subtitle">Nuit à partir de 68<span class="euro">€</span></p>
+                    </div>
+                    <div class="card-rating">
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                      <span class="sr-only">Note de 4 sur 5</span>
+                    </div>
+                  </div>
+                </article>
+              </a>
+            </div>
+        </section>
+        <section class="populaires">
+          <div class="populaires-title">
+            <h2 class="section-title">Les plus populaires</h2>
+            <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+          </div>
+          <div class="populaires-cards">
+            <a href="#">
+              <article class="card">
+                <img src="./images/hebergements/emile-guillemot.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                <div class="card-content">
+                  <div class="card-txt">
+                    <h3 class="card-title">Hôtel Le soleil du matin</h3>
+                    <p class="card-subtitle">Nuit à partir de 128<span class="euro">€</span></p>
+                  </div>
+                  <div class="card-rating">
+                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                    <span class="sr-only">Note de 4 sur 5</span>
+                  </div>
+                </div>
+              </article>
+            </a>
+            <a href="#">
+              <article class="card">
+                <img src="./images/hebergements/aw-creative.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                <div class="card-content">
+                  <div class="card-txt">
+                    <h3 class="card-title">Chambres d’hôtes Au cœur de l’eau</h3>
+                    <p class="card-subtitle">Nuit à partir de 71<span class="euro">€</span></p>
+                  </div>
+                  <div class="card-rating">
+                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                    <span class="sr-only">Note de 4 sur 5</span>
+                  </div>
+                </div>
+              </article>
+            </a>
+            <a href="#">
+              <article class="card">
+                <img src="./images/hebergements/febrian-zakaria2.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                <div class="card-content">
+                  <div class="card-txt">
+                    <h3 class="card-title">Hôtel Bleu et Blanc</h3>
+                    <p class="card-subtitle">Nuit à partir de 68<span class="euro">€</span></p>
+                  </div>
+                  <div class="card-rating">
+                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                    <span class="sr-only">Note de 4 sur 5</span>
+                  </div>
+                </div>
+              </article>
+            </a>
+          </div>
+        </section>
+      </div>
+      <section class="activites">
+        <div class="activites-title">
+          <h2 class="section-title">Activités à Marseille</h2>
+          <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+        </div>
+        <div class="activites-cards">
+        <a href="#">
+          <article class="card">
+            <img src="./images/activites/reno-laithienne.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+            <div class="card-content">
+              <div class="card-txt">
+                <h3 class="card-title">Vieux-Port</h3>
+              </div>
+            </div>
+          </article>
+        </a>
+        <a href="#">
+          <article class="card">
+            <img src="./images/activites/paul-hermann.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+            <div class="card-content">
+              <div class="card-txt">
+                <h3 class="card-title">Fort de Pomègues</h3>
+              </div>
+            </div>
+          </article>
+        </a>
+        <a href="#">
+          <article class="card">
+            <img src="./images/activites/kilyan-sockalingum.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+            <div class="card-content">
+              <div class="card-txt">
+                <h3 class="card-title">Parc national des Calanques</h3>
+              </div>
+            </div>
+          </article>
+        </a>
+        <a href="#">
+          <article class="card">
+            <img src="./images/activites/florian-wehde.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+            <div class="card-content">
+              <div class="card-txt">
+                <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
+              </div>
+            </div>
+          </article>
+        </a>
+      </div>
+      </section>
+    </main>
+    <footer>
+      <nav>
+        <div class="footer-links" >
+          <h3 >À propos</h3>
+        <ul>
+          <li><a href=""><span>Fonctionnement du site</span></a></li>
+          <li><a href=""><span>Conditions générales</span></a></li>
+          <li><a href=""><span>Données et confidentialité</span></a></li>
+        </ul>
+      </div>
+      <div class="footer-links" >
+        <h3 >Nos hébergements</h3>
+        <ul>
+          <li><a href=""><span>Charte qualité</span></a></li>
+          <li><a href=""><span>Proposer votre hôtel</span></a></li>
+        </ul>
+      </div>
+        <div class="footer-links" >
+          <h3 >Assistance</h3>
+        <ul>
+          <li><a href=""><span>Centre d'aide</span></a></li>
+          <li><a href=""><span>Nous contacter</span></a></li>
+        </ul>
+      </div>
+      </nav>
+
+
+    </footer>
+  </div>
 </body>
 
 </html>

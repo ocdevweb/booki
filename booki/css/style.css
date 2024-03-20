@@ -97,8 +97,10 @@ a {
 /****** Recherche ***********/
 form {
     width: 450px;
+    max-width: 100%;
     display: flex;
     margin: 15px 0px;
+    justify-content: center;
 }
 
 .searchbar form .input-group {
@@ -108,7 +110,7 @@ form {
 }
 
 .searchbar form .input-group .position {
-    border: 0x;
+    border: 0;
     margin: 0px;
     height: 51px;
 }
@@ -135,6 +137,10 @@ form {
     padding-right: 1rem;
 }
 
+.searchbar form .input-group button.btn[type="submit"]::before {
+    content: 'Rechercher';
+}
+
 .filterbar {
     flex-wrap: wrap;
     display: flex;
@@ -146,7 +152,7 @@ form {
 .filterbar .filterbuttons {
     display: flex;
     flex-wrap: wrap;
-    gap: 1em;
+    gap: 5px;
 }
 
 .filterbar .filterbuttons button {
@@ -154,6 +160,7 @@ form {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
+    justify-content: center;
     border: 2px solid #f2f2f2;
     background-color: white;
     gap: 5px;
@@ -162,6 +169,7 @@ form {
     font-weight: 400;
     padding-left: 1rem;
     padding-right: 1rem;
+    width: 172px;
 }
 
 .filterbar .filterbuttons button:hover {
@@ -223,7 +231,7 @@ form {
 .hebergements-cards img {
     width: 100%;
     height: 124px;
-    border-radius: 20px;
+    border-radius: 20px 20px 0 0;
 }
 
 .hebergements-cards .card-content {
@@ -440,5 +448,126 @@ footer nav ul li {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+
+    body {
+        margin: 0;
+    }
+
+    .searchbar form .input-group {
+        max-width: 100%;
+    }
+
+    header nav {
+        width: 100%;
+    }
+
+    header ul {
+        width: 100%;
+        padding: 0;
+    }
+
+    header ul li {
+        width: 50%;
+    }
+
+    header ul li a {
+        width: 100%;
+        text-align: center;
+        padding: 0px 0px 1em 0px;
+    }
+
+    header ul li a:hover {
+        border-bottom: 2px solid;
+        border-top: none;
+    }
+
+    .search {
+        padding: 0 8px;
+    }
+
+    .main-container {
+        padding: 5px 0px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .filterbar .filterbuttons {
+        gap: 5px;
+    }
+
+
+
+    .searchbar form .input-group button.btn[type="submit"]::before {
+        content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 512" ><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="white" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>');
+        width: 17px;
+        height: 17px;
+    }
+
+    .searchbar form .input-group button.btn[type="submit"] {
+        filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.4));
+        border-radius: 15px;
+        transform: translate(-15px, 0);
+    }
+
+
+
+    .hebergements-and-populaires {
+        flex-direction: column-reverse;
+    }
+
+    .hebergements-and-populaires section {
+        border-radius: 0;
+    }
+
+    section.hebergements {
+        background-color: white;
+    }
+
+    .hebergements-cards {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .hebergements-cards a {
+        width: 100%;
+    }
+
+    .populaires-cards {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .populaires-cards a {
+        width: 100%;
+    }
+
+    .activites-cards {
+        gap: 10px;
+    }
+
+    .activites-cards {
+        margin-top: 33px;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .activites-cards a {
+        width: 100%;
+    }
+
+    .activites-cards img {
+        height: 200px;
+    }
+
+    footer nav {
+        flex-direction: column;
+    }
+
+    footer nav .footer-links {
+        width: 100%;
+    }
+
 }

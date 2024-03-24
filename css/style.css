@@ -48,7 +48,7 @@ header>img {
 }
 
 body {
-    margin-top: 0;
+    margin: 0;
     display: flex;
     justify-content: center;
 }
@@ -100,7 +100,6 @@ form {
     max-width: 100%;
     display: flex;
     margin: 15px 0px;
-    justify-content: center;
 }
 
 .searchbar form .input-group {
@@ -145,14 +144,14 @@ form {
     flex-wrap: wrap;
     display: flex;
     margin: 20px 0px;
-    gap: 1em;
+    gap: 5px;
 
 }
 
 .filterbar .filterbuttons {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     gap: 5px;
 }
 
@@ -170,7 +169,7 @@ form {
     font-weight: 400;
     padding-left: 1rem;
     padding-right: 1rem;
-    width: 172px;
+    min-width: 165px;
 }
 
 .filterbar .filterbuttons button:hover {
@@ -202,6 +201,7 @@ form {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+    margin-top: 20px;
 }
 
 .hebergements-title {
@@ -226,7 +226,7 @@ form {
 .hebergements-cards .card {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 95%;
 }
 
 .hebergements-cards img {
@@ -237,7 +237,7 @@ form {
 
 .hebergements-cards .card-content {
     width: 100%;
-    padding-top: 15px;
+    padding: 15px 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -246,7 +246,7 @@ form {
 
 .hebergements-cards .card-title {
     margin-top: 10px;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
 }
 
 .hebergements-cards .card-subtitle {
@@ -257,10 +257,17 @@ form {
     margin-bottom: 5px;
 }
 
+.more {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
 
 /****** Populaires ***********/
 .populaires {
     width: 32%;
+    margin-top: 20px;
 }
 
 .populaires-title {
@@ -292,7 +299,7 @@ form {
 
 .populaires-cards .card-title {
     margin-top: 10px;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
 }
 
 .populaires-cards .card-subtitle {
@@ -345,7 +352,7 @@ form {
 
 .activites-cards .card-content {
     width: 100%;
-    padding: 15px;
+    padding: 0px 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -362,7 +369,6 @@ footer {
 
 footer nav {
     display: flex;
-    gap: 20px;
     justify-content: space-evenly;
 }
 
@@ -402,7 +408,6 @@ footer nav ul li {
 
     .hebergements {
         width: 100%;
-        margin-top: 50px;
     }
 
     .hebergements-cards {
@@ -425,7 +430,6 @@ footer nav ul li {
 
     .populaires {
         width: 100%;
-        margin-top: 50px;
     }
 
     .populaires-cards {
@@ -445,14 +449,15 @@ footer nav ul li {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .activites-cards img {
+        height: 200px;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
 
-    body {
-        margin: 0;
-    }
 
     .searchbar form .input-group {
         max-width: 100%;
@@ -487,7 +492,7 @@ footer nav ul li {
     }
 
     .main-container {
-        padding: 5px 0px;
+        padding: 0px;
     }
 
     header {
@@ -499,10 +504,8 @@ footer nav ul li {
         gap: 5px;
     }
 
-
-
     .searchbar form .input-group button.btn[type="submit"]::before {
-        content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 512" ><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="white" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>');
+        content: url(../images/search/search.svg);
         width: 17px;
         height: 17px;
     }
@@ -512,8 +515,6 @@ footer nav ul li {
         border-radius: 15px;
         transform: translate(-15px, 0);
     }
-
-
 
     .hebergements-and-populaires {
         flex-direction: column-reverse;
@@ -555,12 +556,16 @@ footer nav ul li {
         flex-direction: column;
     }
 
+    .activites-cards .card-content {
+        padding: 5px 15px;
+    }
+
     .activites-cards a {
         width: 100%;
     }
 
     .activites-cards img {
-        height: 200px;
+        height: 150px;
     }
 
     footer nav {

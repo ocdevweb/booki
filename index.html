@@ -13,7 +13,6 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./css/style.css">
 </head>
-
 <body>
   <div class="main-container">
     <header>
@@ -28,14 +27,14 @@
     <main>
       <div class="search">
         <div class="searchbar">
-          <h3 class="section-title">Trouvez votre hébergement pour des vacances de rêve</h3>
+          <h1 class="section-title">Trouvez votre hébergement pour des vacances de rêve</h1>
           <p>En plein centre-ville ou en pleine nature</p>
           <form action="/search" method="POST" role="search">
             <div class="input-group">
-              <div class="position">
-                <img src="images/search/mark.svg" />
-              </div>
-              <input class="form-control" type="search" placeholder="Marseille, France" aria-label="Place"
+              <label for="place" class="position">
+                <img src="images/search/mark.svg" alt="label pour l'élément de saisie de la ville">
+              </label>
+              <input id="place" class="form-control" type="search" placeholder="Marseille, France" aria-label="Place"
                 aria-describedby="btn" name="query" required>
               <button class="btn" type="submit" id="btn">
               </button>
@@ -46,23 +45,22 @@
           <h5>Filtres</h5>
           <div class="filterbuttons">
             <button class="btn">
-              <img src="images/search/cheap.svg" />
+              <img src="images/search/cheap.svg" alt="icone éco">
               <span>Économique</span></button>
             <button class="btn">
-              <img src="images/search/love.svg" alt="">
+              <img src="images/search/family.svg" alt="icone famille">
               <span>Familial</span></button>
             <button class="btn">
-              <img src="images/search/featured.svg" alt="">
+              <img src="images/search/love.svg" alt="icone coeur">
               <span>Romantique</span></button>
             <button class="btn">
-              <img src="images/search/featured.svg" />
+              <img src="images/search/featured.svg" alt="icone flamme">
               <span>Nos pépites</span></button>
           </div>
         </div>
         <div class="infobar">
           <img src="images/search/info.svg" alt="info">
           <span>Plus de 500 logements sont disponibles dans cette ville</span>
-
         </div>
       </div>
       <div class="hebergements-and-populaires">
@@ -265,7 +263,7 @@
         <div class="activites-cards">
           <a href="#">
             <article class="card">
-              <img src="./images/activites/reno-laithienne.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+              <img src="./images/activites/reno-laithienne.jpg" alt="Image du Vieux-Port">
               <div class="card-content">
                 <div class="card-txt">
                   <h3 class="card-title">Vieux-Port</h3>
@@ -275,7 +273,7 @@
           </a>
           <a href="#">
             <article class="card">
-              <img src="./images/activites/paul-hermann.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+              <img src="./images/activites/paul-hermann.jpg" alt="Image du Fort de Pomègues">
               <div class="card-content">
                 <div class="card-txt">
                   <h3 class="card-title">Fort de Pomègues</h3>
@@ -285,7 +283,7 @@
           </a>
           <a href="#">
             <article class="card">
-              <img src="./images/activites/kilyan-sockalingum.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+              <img src="./images/activites/kilyan-sockalingum.jpg" alt="Image du Parc national des Calanques">
               <div class="card-content">
                 <div class="card-txt">
                   <h3 class="card-title">Parc national des Calanques</h3>
@@ -295,7 +293,7 @@
           </a>
           <a href="#">
             <article class="card">
-              <img src="./images/activites/florian-wehde.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+              <img src="./images/activites/florian-wehde.jpg" alt="Image de Notre-Dame-de-la-Garde">
               <div class="card-content">
                 <div class="card-txt">
                   <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
